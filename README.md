@@ -3,9 +3,9 @@
 * Uses Lando for Local Development. View the .lando.yml file for more information
 * Because this is a Composer worflow. In order to update your site with the most up to date modules and features from the TIE Upstream. You will need to use terminus compuser to add the modules: terminus composer site.env -- install
 
-* To set up a local environment you will need to comment out the excludes section in the composer.json in order to download the necessary files for a local install. 
+* To set up a local environment you will need to comment out the excludes section in the composer.json in order to download the necessary files for a local install. :
 
-** After the composer install command is run you can checkout the composer.json to erase your previous edit. 
+  * After the composer install command is run you can checkout the composer.json to erase your previous edit. 
 
 
 # Example Drops 8 Composer
