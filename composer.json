@@ -90,14 +90,7 @@
         "sites/default/default.services.pantheon.preproduction.yml",
         "sites/default/settings.pantheon.php"
       ],
-      "excludes": [
-        ".csslintrc",
-        ".editorconfig",
-        ".eslintignore",
-        ".eslintrc.json",
-        ".htaccess",
-        "web.config"
-      ]
+      "excludes": []
     }
   },
   "config": {
