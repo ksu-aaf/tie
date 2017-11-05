@@ -1,3 +1,8 @@
+# Drops 8 Composer Template 
+1. Uses Lando for Local Development
+2. Becuase this is a Composer worflow. In order to update your site with the most up to date modules and features from the TIE Upstream. You will need to use terminus compuser to add the modules: terminus composer site.env -- install
+
+
 # Example Drops 8 Composer
 
 [![CircleCI](https://circleci.com/gh/pantheon-systems/example-drops-8-composer.svg?style=shield)](https://circleci.com/gh/pantheon-systems/example-drops-8-composer)
