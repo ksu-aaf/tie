@@ -1,0 +1,91 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tie_application.field_application_deadline
+    - field.field.node.tie_application.field_application_description
+    - field.field.node.tie_application.field_application_documents
+    - field.field.node.tie_application.field_application_form_ref
+    - field.field.node.tie_application.field_application_tags
+    - node.type.tie_application
+  module:
+    - datetime
+    - file
+    - path
+    - text
+    - webform
+id: node.tie_application.default
+targetEntityType: node
+bundle: tie_application
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+  field_application_deadline:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_application_description:
+    weight: 5
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+  field_application_documents:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  field_application_form_ref:
+    type: webform_entity_reference_select
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  field_application_tags:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  path:
+    type: path
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

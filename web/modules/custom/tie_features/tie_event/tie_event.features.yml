@@ -1,0 +1,5 @@
+bundle: tie
+excluded:
+  - webform.webform.general_event_evaluation
+  - webform.webform.general_event_registration
+required: true

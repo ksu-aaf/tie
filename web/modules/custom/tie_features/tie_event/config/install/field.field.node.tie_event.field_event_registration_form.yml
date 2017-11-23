@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_registration_form
+    - node.type.tie_event
+  module:
+    - webform
+id: node.tie_event.field_event_registration_form
+field_name: field_event_registration_form
+entity_type: node
+bundle: tie_event
+label: 'Event Registration Form'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: true
+field_type: webform

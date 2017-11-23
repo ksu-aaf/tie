@@ -1,0 +1,13 @@
+smtp_on: true
+smtp_host: smtp.gmail.com
+smtp_hostbackup: ''
+smtp_port: '465'
+smtp_protocol: ssl
+smtp_username: ksucetl@gmail.com
+smtp_password: House5400
+smtp_from: cetl@kennesaw.edu
+smtp_fromname: ''
+smtp_allowhtml: '1'
+smtp_test_address: ''
+smtp_debugging: false
+prev_mail_system: php_mail

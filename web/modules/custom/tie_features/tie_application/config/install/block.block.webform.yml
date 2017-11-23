@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.faculty_funding_submission
+  module:
+    - block_visibility_groups
+    - webform
+  theme:
+    - seven
+id: webform
+theme: seven
+region: content
+weight: -2
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Faculty Funding Application Evaluation'
+  provider: webform
+  label_display: visible
+  webform_id: faculty_funding_application_eval
+  default_data: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: faculty_funding_submission
+    context_mapping: {  }

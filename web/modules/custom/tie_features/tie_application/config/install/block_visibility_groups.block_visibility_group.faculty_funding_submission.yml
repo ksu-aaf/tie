@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: faculty_funding_submission
+label: 'Faculty Funding Submission'
+logic: and
+conditions:
+  b8e4be86-4cc4-4e3b-a64c-b33ccc3943c3:
+    id: 'entity_bundle:webform_submission'
+    bundles:
+      faculty_funding_application: faculty_funding_application
+    negate: false
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'
+    uuid: b8e4be86-4cc4-4e3b-a64c-b33ccc3943c3
+allow_other_conditions: false

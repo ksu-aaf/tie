@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: article_citation
+label: 'Article Citation'
+behavior_plugins: {  }

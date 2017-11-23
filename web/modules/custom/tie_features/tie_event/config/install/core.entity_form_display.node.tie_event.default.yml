@@ -1,0 +1,131 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tie_event.field_event_campus
+    - field.field.node.tie_event.field_event_description
+    - field.field.node.tie_event.field_event_end_date
+    - field.field.node.tie_event.field_event_evaluation
+    - field.field.node.tie_event.field_event_location
+    - field.field.node.tie_event.field_event_presenter
+    - field.field.node.tie_event.field_event_registration_form
+    - field.field.node.tie_event.field_event_start_date
+    - field.field.node.tie_event.field_event_tag
+    - field.field.node.tie_event.field_event_type
+    - node.type.tie_event
+  module:
+    - datetime
+    - path
+    - text
+    - webform
+id: node.tie_event.default
+targetEntityType: node
+bundle: tie_event
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+  field_event_campus:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_event_description:
+    weight: 8
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+  field_event_end_date:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_event_evaluation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+  field_event_location:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_event_presenter:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_event_registration_form:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+  field_event_start_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_event_tag:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_event_type:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  path:
+    type: path
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 13
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 14
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

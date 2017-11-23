@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: conference_citation
+label: 'Conference Citation'
+behavior_plugins: {  }
